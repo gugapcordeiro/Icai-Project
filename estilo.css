@@ -1,0 +1,112 @@
+body {
+    font-family: Arial,sans-serif;
+    background-color: #C4C4C4;
+}
+
+div#tela {
+    width: 520px;
+    height: 600px;
+    background-color: #ffffff;
+    margin: 20px auto 20px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    padding: 10px 10px 10px 10px;
+}
+
+/* Formatação do Menu */
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 5px;
+    left: 310px;
+}
+
+nav#menu li#branco {
+    display: inline-block;
+    width: 235px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li#cinza {
+    display: inline-block;
+    width: 235px;
+    text-align: center;
+    background-color: #c4c4c4;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: #c4c4c4;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+form {
+    /* Apenas para centralizar o form na página */
+    margin: 150px auto 0 auto;
+    width: 400px;
+    /* Para ver as bordas do formulário */
+    padding: 1em;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+}
+
+form div + div{
+    margin-top: 2em;
+}
+
+form label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+
+input{
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1em sans-serif;
+
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+}
+
+input:focus{
+    /* Dar um pouco de destaque nos elementos ativos */
+    border-color: #000;
+}
+
+.button {
+    /* Para posicionar os botões para a mesma posição dos campos de texto */
+    padding-left: 150px; /* mesmo tamanho que os elementos do tipo label */
+}
+button {
+    /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+    margin-left: .5em;
+}
+
+ratio {
+    margin-left: .5em;
+}
