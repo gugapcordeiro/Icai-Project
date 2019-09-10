@@ -1,6 +1,49 @@
+
 body {
     font-family: Arial,sans-serif;
-    background-color: #C4C4C4;
+    background-image: url(fundo.png);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 450px;
+    min-height: 100%;
+    padding: 20px;
+    background-color: rgba(160, 160, 160, 0.5);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  }
+
+  .navbar {  
+    display: inline-block;
+    background-color: #c4c4c4;
+    text-align: center;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+  }
+
+  .navbar:hover {
+    background-color: #ffffff;
+}
+
+.jumbotron {
+    background-color:rgb(80, 80, 80);
+    color: white;
+}
+
+/*Adicionando bordas */
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.nav-tabs {
+    margin-bottom: 0;
 }
 
 div#tela {
@@ -17,38 +60,6 @@ nav#menu {
     display: block;
 }
 
-nav#menu ul {
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute;
-    top: 5px;
-    left: 310px;
-}
-
-nav#menu li#branco {
-    display: inline-block;
-    width: 235px;
-    text-align: center;
-    background-color: #ffffff;
-    padding: 10px;
-    margin: 2px;
-    transition: background-color 1s;
-}
-
-nav#menu li#cinza {
-    display: inline-block;
-    width: 235px;
-    text-align: center;
-    background-color: #c4c4c4;
-    padding: 10px;
-    margin: 2px;
-    transition: background-color 1s;
-}
-
-nav#menu li:hover {
-    background-color: #c4c4c4;
-}
-
 nav#menu a {
     color: black;
     text-decoration: none;
@@ -56,21 +67,21 @@ nav#menu a {
 
 nav#menu a:hover {
     color: black;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 form {
     /* Apenas para centralizar o form na página */
-    margin: 150px auto 0 auto;
-    width: 400px;
+    margin: 40px auto 0 auto;
+    width: 300px;
     /* Para ver as bordas do formulário */
     padding: 1em;
-    border-top: 1px solid #CCC;
-    border-bottom: 1px solid #CCC;
+    border-top: 1px solid rgb(80, 80, 80);
+    border-bottom: 1px solid rgb(80, 80, 80);
 }
 
 form div + div{
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 form label {
@@ -107,6 +118,6 @@ button {
     margin-left: .5em;
 }
 
-ratio {
-    margin-left: .5em;
+div.botao {
+    align-items: center;
 }
